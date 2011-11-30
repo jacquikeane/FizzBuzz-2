@@ -9,4 +9,6 @@ build_requires 'Test::More';
 
 requires 'Moose';
 
+install_script glob('script/*.pl');
+auto_install;
 WriteAll;
