@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 
-use lib q{.};
 use strict;
 use warnings;
 use FizzBuzz;
