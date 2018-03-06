@@ -1,13 +1,20 @@
 #!/usr/bin/perl
 
-use lib q{.};
 use strict;
 use warnings;
 use FizzBuzz;
+use Getopt::Long qw(GetOptions);
+
+my ($fizz, $buzz) = (3, 5);
+
+GetOptions (
+  "fizz=i" => \$fizz,
+  "buzz=i" => \$buzz,
+);
 
 my $fb = FizzBuzz->new (
-    fizz => 3,
-    buzz => 5,
+    fizz => $fizz,
+    buzz => $buzz,
 );
 
 for(0..100) {

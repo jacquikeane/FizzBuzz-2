@@ -8,6 +8,7 @@ license  'perl';
 build_requires 'Test::More';
 
 requires 'Moose';
+requires 'Getopt::Long';
 
 install_script glob('script/*.pl');
 auto_install;
